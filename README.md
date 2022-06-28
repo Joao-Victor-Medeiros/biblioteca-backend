@@ -1,3 +1,15 @@
+#Biblioteca back-end 
+
+#Development server
+Start mongo with 'sudo systemctl start mongod' then 'mongo' in linux
+Run node app for a dev server. Navigate to `http://localhost:3000/books`. The app will automatically reload if you change any of the source files.
+
+#Configs
+Node.js v14.18.1.
+MongoDB 5.0 Community Edition
+
+
+
 usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
@@ -44,3 +56,6 @@ collaborate (see also: git help workflows)
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
+
+
+
