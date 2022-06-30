@@ -1,61 +1,18 @@
-#Biblioteca back-end 
+![objects](https://user-images.githubusercontent.com/53875554/176593886-1ecc2eea-d92d-4673-a0aa-c9490665bee4.jpg)
+![objects](https://img.shields.io/static/v1?label=node&message=14.18.1&color=<COLOR>)
+![objects](https://img.shields.io/static/v1?label=mongodb&message=5.0&color=<COLOR>)
 
-#Development server
-Start mongo with 'sudo systemctl start mongod' then 'mongo' in linux
-Run node app for a dev server. Navigate to `http://localhost:3000/books`. The app will automatically reload if you change any of the source files.
+# Introduction to Biblioteca back-end
+API desenvolvida para leitura e inserção de dados relativos ao cadastro de livros
 
-#Configs
-Node.js v14.18.1.
-MongoDB 5.0 Community Edition
+# Installation
+Install Mongodb e node, o mongo por ser um pouco mais complexo necessita de seguir os tutoriais segundo é oferecido na documentação deles https://www.mongodb.com/docs/manual/installation/, escolha o SO e execute os comandos inclusive o de criação de um DB e uma collection, para criar basta inserir os seguintes códigos:
+1º use biblioteca
+2º db.books.insert(name: "livro teste", author: "Machado de Assis", date:"30/06/1888")
+3º show collection
 
+Assim, com banco criado basta instalar os frameworks e dependências do back end usando `npm install --save express body-parser cors mongoose`.
+Rode o node app em um terminal para subir o back-end, navegue até a porta `http://localhost:3000/books` que app será automaticamente carregado e verá o "livro teste" que inserimos no terminal mongo
 
-
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone             Clone a repository into a new directory
-   init              Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add               Add file contents to the index
-   mv                Move or rename a file, a directory, or a symlink
-   restore           Restore working tree files
-   rm                Remove files from the working tree and from the index
-   sparse-checkout   Initialize and modify the sparse-checkout
-
-examine the history and state (see also: git help revisions)
-   bisect            Use binary search to find the commit that introduced a bug
-   diff              Show changes between commits, commit and working tree, etc
-   grep              Print lines matching a pattern
-   log               Show commit logs
-   show              Show various types of objects
-   status            Show the working tree status
-
-grow, mark and tweak your common history
-   branch            List, create, or delete branches
-   commit            Record changes to the repository
-   merge             Join two or more development histories together
-   rebase            Reapply commits on top of another base tip
-   reset             Reset current HEAD to the specified state
-   switch            Switch branches
-   tag               Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch             Download objects and refs from another repository
-   pull              Fetch from and integrate with another repository or a local branch
-   push              Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
-
-
-
+# Techniques
+Fora implementado um padrão MVC usando os métodos get e post para renderização dos livros e inserção dos livros 
